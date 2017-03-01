@@ -1,0 +1,55 @@
+body {
+    position: relative;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+#header {
+    padding: 0;
+    padding-top: 50px;
+}
+
+#header-carousel {
+    max-height: 500px;
+}
+
+#carousel-title {
+    position: absolute;
+    top: 0px;
+    width: 97%;
+    color: #FFF;
+}
+
+#carousel-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 97%;
+    padding: 20px;
+    color: #FFF;
+    font-size: 120%;
+}
+
+.panel, .panel-group {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+footer {
+    padding-left: 20px;
+}
+
+.btn {
+    font-size: 125%;
+    height: 5em;
+    width: 100%;
+}
+
+.list-group {
+    margin: 0;
+}

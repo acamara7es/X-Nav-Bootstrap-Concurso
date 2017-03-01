@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Materiales para cursos sobre tecnologías web en la ETSIT de la Universidad Rey Juan Carlos">
+	<meta name="author" content="Jesús M. González Barahona y Gregorio Robles">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>Cursos sobre tecnologías web</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-web">
+	<nav id="navbar-web" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a class="navbar-brand" href="#">Cursos Web</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#seccion_asignaturas">Asignaturas</a></li>
+					<li><a href="#seccion_codigo">Código</a></li>
+					<li><a href="#seccion_recursos">Recursos</a></li>
+					<li><a href="#seccion_alumnos">Alumnos</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://github.com/CursosWeb">Código fuente de todo esto</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<header class="container-fluid" id="header">
+		<div class="row">
+			<div class="col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-12 col-md-10 col-lg-8">
+				<div id="header-carousel" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="images/django.png" alt="Django wallpaper">
+						</div>
+						<div class="item">
+							<img src="images/web.png" alt="web">
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#header-carousel" role="button" data-slide="prev">
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#header-carousel" role="button" data-slide="next">
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<!--Bootsnipp http://bootsnipp.com/snippets/featured/carousel-static-headline-caption  -->
+				<div id="carousel-title" class="text-center">
+					<h1>
+                        Cursos sobre tecnologías web
+					</h1>
+				</div>
+				<div id="carousel-footer">
+					<p>Documentación (programas, ejercicios, código útil para las prácticas) para algunos cursos sobre tecnologías web impartidos en la <a href="http://www.etsit.urjc.es">Escuela de Ingeniería de
+						Telecomunicación</a> de la <a href="http://www.urjc.es">Universidad Rey Juan Carlos</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="seccion_asignaturas" class="container">
+		<h2>Asignaturas</h2>
+		<p>En esta sección se recogen los programas de cada asignatura (Incluyen planificación temporal de las clases, enunciados de ejercicios y prácticas, exámenes de cursos pasados, etc.) y las transparencias usadas en las sesiones de los cursos.</p>
+		<p>En las 2 primeras asignaturas (IT-AT e ITT-DAT) se estudia cómo desarrollar aplicaciones en el <em>front-end</em> con HTML5 y javascript y las dos últimas están más enfocadas a trabajar desarrollando en el servidor (<em>back-end</em>).</p>
+		<p class="bg-danger"><strong>Atención:</strong> Iremos completando y actualizando los programas y las transparencias según avanzan las asignaturas.</p>
+		<div class="panel-group container-fluid" id="acordeon_asignaturas" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="it-at">
+					<h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon_asignaturas" href="#it-at-collapse" aria-expanded="false" aria-controls="it-at-collapse">
+				        	Aplicaciones Telemáticas <span class="text-muted">Grado en Ingeniería Telemática (IT-AT)</span>
+				        </a>
+			      </h4>
+				</div>
+				<div id="it-at-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="it-at">
+					<div class="panel-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-offset-2 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/programas/IT-AT.pdf">
+										<button type="button" class="btn btn-primary" autocomplete="off">
+					  						<span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>Programa
+										</button>
+									</a>
+								</div>
+								<div class="col-md-offset-1 col-lg-offset-1 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/transpas/IT-AT.pdf">
+										<button type="button" class="btn btn-primary" autocomplete="off">
+					  						<span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span><br>Transparencias
+										</button></a>
+
+								</div>
+								<div class="col-md-offset-1 col-lg-offset-1 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/transpas/frikiminutos-c.pdf">
+										<button type="button" class="btn btn-primary" autocomplete="off">
+					  						<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span><br>Frikiminutos
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="itt-dat">
+					<h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon_asignaturas" href="#itt-dat-collapsed" aria-expanded="false" aria-controls="itt-dat-collapsed">
+				          Desarrollo de Aplicaciones Telemáticas <span class="text-muted">Grado en Ingeniería en Tecnologías de Telecomunicación (ITT-DAT)</span>
+				        </a>
+		      		</h4>
+				</div>
+				<div id="itt-dat-collapsed" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itt-dat">
+					<div class="panel-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-offset-2 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/programas/ITT-DAT.pdf">
+										<button type="button" class="btn btn-warning" autocomplete="off">
+					  						<span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>Programa
+										</button>
+									</a>
+								</div>
+								<div class="col-md-offset-1 col-lg-offset-1 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/transpas/ITT-DAT.pdf">
+										<button type="button" class="btn btn-warning" autocomplete="off">
+					  						<span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span><br>Transparencias
+										</button></a>
+
+								</div>
+								<div class="col-md-offset-1 col-lg-offset-1 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/transpas/frikiminutos-b.pdf">
+										<button type="button" class="btn btn-warning" autocomplete="off">
+					  						<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span><br>Frikiminutos
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="ist-saro">
+					<h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon_asignaturas" href="#ist-saro-collapse" aria-expanded="false" aria-controls="ist-saro-collapse">
+				        	Servicios y Aplicaciones en Redes de Ordenadores <span class="text-muted">Grado en Sistemas de Telecomunicación (IST-SARO)</span>
+				        </a>
+			      </h4>
+				</div>
+				<div id="ist-saro-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ist-saro">
+					<div class="panel-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-offset-2 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/programas/IST-SARO.pdf">
+										<button type="button" class="btn btn-info" autocomplete="off">
+					  						<span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>Programa
+										</button>
+									</a>
+								</div>
+								<div class="col-md-offset-1 col-lg-offset-1 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/transpas/IST-SARO.pdf">
+										<button type="button" class="btn btn-info" autocomplete="off">
+					  						<span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span><br>Transparencias
+										</button></a>
+
+								</div>
+								<div class="col-md-offset-1 col-lg-offset-1 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/transpas/frikiminutos-a.pdf">
+										<button type="button" class="btn btn-info" autocomplete="off">
+					  						<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span><br>Frikiminutos
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="itt-sat">
+					<h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon_asignaturas" href="#itt-sat-collapse" aria-expanded="false" aria-controls="itt-sat-collapse">
+				        	Servicios y Aplicaciones Telemáticas <span class="text-muted">Grado en Ingeniería en Tecnologías de Telecomunicación (ITT-SAT)</span>
+				        </a>
+			      </h4>
+				</div>
+				<div id="itt-sat-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ist-saro">
+					<div class="panel-body">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-offset-2 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/programas/ITT-SAT.pdf">
+										<button type="button" class="btn btn-success" autocomplete="off">
+					  						<span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>Programa
+										</button>
+									</a>
+								</div>
+								<div class="col-md-offset-1 col-lg-offset-1 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/transpas/ITT-SAT.pdf">
+										<button type="button" class="btn btn-success" autocomplete="off">
+					  						<span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span><br>Transparencias
+										</button></a>
+
+								</div>
+								<div class="col-md-offset-1 col-lg-offset-1 col-md-3 col-lg-2">
+									<a href="https://cursosweb.github.io/transpas/frikiminutos-a.pdf">
+										<button type="button" class="btn btn-success" autocomplete="off">
+					  						<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span><br>Frikiminutos
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="container" id="seccion_codigo">
+		<h2>Código</h2>
+		<p>Código usado para resolver los ejercicios o prácticas. Todo el código está en el repositorio
+			<a href="https://github.com/CursosWeb/Code">CursosWeb/Code</a>
+		</p>
+		<p>Prácticas incrementales, entre los <a href="https://github.com/CursosWeb">repositorios de CursosWeb en GitHub</a> (ver detalles en el programa de cada asignatura):
+			<ul>
+				<li>ITT-DAT e IT-AT: Los repositorios que comienzan por X-Nav.</li>
+				<li>IST-SARO e ITT-SAT: Los repositorios que comienzan por X-Serv.</li>
+			</ul>
+
+			<p class="bg-info">Recuerda que para entregar tus prácticas tendrás que &ldquo;hacer un fork&rdquo; de los repositorios correspondientes, y registrar tu nombre de cuenta en Git Hub en la actividad abierta para ello en el sitio de tu asignatura en el campus virtual.
+			</p>
+			<p class="bg-danger"><strong>Atención:</strong> iremos poniendo más código relacionado con las prácticas durante los próximos días.</p>
+			<div class="row">
+				<div class="panel panel-primary col-md-5 col-lg-5">
+					<div class="panel-heading">Código utilizado en IST-SARO e ITT-SAT</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/HTML">Introducción a HTML</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/CSS">Introducción a CSS</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/JavaScript">Introducción a JavaScript</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/jQuery">Introducción a jQuery</a> (<a href="http://cursosweb.github.io/Code/jQuery">demos online</a>)</li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/HTML5">Introducción a HTML5</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/JS-Libs">Algunas bibliotecas JavaScript</a> (<a href="http://cursosweb.github.io/Code/JS-Libs/jquery-ui">demos online relacionadas con jQuery-UI</a>)</li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/JS-APIs">APIs de servicio usadas desde JavaScript</a> (<a href="http://cursosweb.github.io/Code/JS-APIs/leaflet">demos online relacionadas con mapas</a>, <a href="http://cursosweb.github.io/Code/JS-APIs/github">demos online relacionadas con GitHub</a>)</li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/OAuth">OAuth</a> (<a href="http://cursosweb.github.io/Code/OAuth">demos online</a>)</li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel panel-primary col-md-offset-2 col-lg-offset-2  col-md-5 col-lg-5">
+					<div class="panel-heading">Código utilizado en IST-SARO e ITT-SAT</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/Python-Web">Servidores web simples en Python</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/REST">Servidores web que interoperan (simples, en Python)</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/XML">XML y Python</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/CSS">CSS</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/Ajax">Ajax</a> (<a href="http://cursosweb.github.io/Code/Ajax/spa-sentences-generator/">demos online</a>)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="container" id="seccion_recursos">
+		<h2>Recursos</h2>
+		<p>Enlaces a recursos externos (libros, programas, etc.) que pueden ser de interés.</p>
+		<div class="panel panel-success">
+			<div class="panel-heading">Otros juegos de transparencias</div>
+			<div class="panel-body">
+				<ul class="list-group">
+					<li class="list-group-item"><a href="http://cursosweb.github.io/transpas/2014-2015/frikiminutos-2015-a.pdf">Frikiminutos (Curso 2014/15)</a></li>
+					<li class="list-group-item"><a href="http://cursosweb.github.io/transpas/tecnoweb-intro.pdf">Introducción práctica a las tecnologías web</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-success">
+			<div class="panel-heading">General</div>
+			<div class="panel-body">
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Materiales varios: </strong><a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Technologies for Developers</a>. Documentación y materiales de muchos tipos para desarrolladores interesados en tecnologías web</li>
+					<li class="list-group-item"><strong>Materiales varios: </strong><a href="https://developer.mozilla.org/en-US/docs/Tools">Firefox Developer Tools</a>. Documentación sobre las herramientas de desarrollador incluidas en Firefox (consola, inspector de HTML, depuradores de JavaScript, de red, etc.)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-success">
+			<div class="panel-heading">Javascript</div>
+			<div class="panel-body">
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Transparencias:</strong> <a href="https://slides.com/concise/js">Concise JavaScript</a>. Breve introducción al lenguaje para quien ya sabe programar.</li>
+					<li class="list-group-item"><strong>Guía: </strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">A re-introduction to JavaScript</a>. Guía práctica para quien cree que ya sabe algo de JavaScript. Muy recomendable.</li>
+					<li class="list-group-item"><strong>Guía: </strong><a href="https://bonsaiden.github.io/JavaScript-Garden/">JavaScript Garden.</a> Documentación sobre los detalles más peculiares de JavaScript, los que suelen dar más problemas.
+						<li class="list-group-item"><strong>Libro: </strong><a href="http://eloquentjavascript.net/">Eloquent JavaScript</a>. Puede ayudarte mucho si ya sabes programar y estás empezando a trabajar con JavaScript.</li>
+						<li class="list-group-item"><strong>Materiales varios: </strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript</a>. Muchos materiales para aprender JavaScript, producidos y compilados por el proyecto Mozilla.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-success">
+			<div class="panel-heading">Python</div>
+			<div class="panel-body">
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Guía: </strong><a href="http://docs.python-guide.org/">The Hitchhiker’s Guide to Python</a>. Manual de buenas prácticas sobre la instalación, configuración y uso de Python.</li>
+					<li class="list-group-item"><strong>Libro: </strong><a href="http://www.diveintopython.net/">Dive into Python</a>. Tal y como la propia introducción del libro dice: &lquo;un libro sobre Python para programadores&rquo;.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-success">
+			<div class="panel-heading">Django</div>
+			<div class="panel-body">
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Libro: </strong><a href="http://tutorial.djangogirls.org/">Django Girls Tutorial</a>. Tutorial sobre Django, para chicas y chicos.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-success">
+			<div class="panel-heading">Git</div>
+			<div class="panel-body">
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Libro: </strong><a href="http://git-scm.com/book/">Pro Git</a>. Libro sobre git, que cubre desde el uso básico hasta varios detalles avanzados, incluyendo el uso con GitHub.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-success">
+			<div class="panel-heading">Otros</div>
+			<div class="panel-body">
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Libro: </strong><a href="http://designingforperformance.com/">Designing for Performance</a>. Optimización de aplicaciones web, teniendo en cuenta tamibén aspectos de diseño.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="container" id="seccion_alumnos">
+		<h2>Alumnos</h2>
+		<p>Materiales producidos por alumnos de estos cursos</p>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="concursos">
+					<h4 class="panel-title">
+		        <a role="button" data-toggle="collapse" data-parent="#concursos" href="#concusros_collapsed" aria-expanded="false" aria-controls="concusros_collapsed">
+		          Concursos de Bootstrap de cursos anteriores (alumnos de ITT-DAT e IT-AT).
+		        </a>
+		      </h4>
+				</div>
+				<div id="concusros_collapsed" class="panel-collapse collapse" role="tabpanel" aria-labelledby="concursos">
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item"><a href="http://gsyc.es/~grex/2016-concurso/">Curso 2015-2016</li>
+							<li class="list-group-item"><a href="http://gsyc.es/~grex/concurso/">Curso 2014-2015</li>
+		  				</ul>
+		  			</div>
+		  		</div>
+			</div>
+			<div class="panel panel-default">
+				<a href="http://vcarrera.github.io/X-Nav-5.7.6-JuegoCanvas/">
+					<div class="panel-heading">
+						<h4 class="panel-title">Juego con Canvas, de Víctor Carrera.</h4>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<p>&copy; CursosWeb 2014-2017</p>
+	</footer>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
