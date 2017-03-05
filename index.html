@@ -13,71 +13,96 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-web">
-	<nav id="navbar-web" class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-				<a class="navbar-brand" href="#">Cursos Web</a>
-			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="#seccion_asignaturas">Asignaturas</a></li>
-					<li><a href="#seccion_codigo">Código</a></li>
-					<li><a href="#seccion_recursos">Recursos</a></li>
-					<li><a href="#seccion_alumnos">Alumnos</a></li>
-				</ul>
-
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="https://github.com/CursosWeb">Código fuente de todo esto</a></li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
-
 	<header class="container-fluid" id="header">
-		<div class="row">
-			<div class="col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-12 col-md-10 col-lg-8">
-				<div id="header-carousel" class="carousel slide" data-ride="carousel">
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img src="images/django.png" alt="Django wallpaper">
-						</div>
-						<div class="item">
-							<img src="images/web.png" alt="web">
-						</div>
-					</div>
+		<nav id="navbar-web" class="navbar navbar-default navbar-inverse topbar navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+					<a class="navbar-brand" href="#">Cursos Web</a>
+				</div>
 
-					<!-- Controls -->
-					<a class="left carousel-control" href="#header-carousel" role="button" data-slide="prev">
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#header-carousel" role="button" data-slide="next">
-						<span class="sr-only">Next</span>
-					</a>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a class="nav-link" id="asignaturas-nav-link" href="#seccion_asignaturas">Asignaturas</a></li>
+						<li><a class="nav-link" id="codigo-nav-link" href="#seccion_codigo">Código</a></li>
+						<li><a class="nav-link" id="recursos-nav-link" href="#seccion_recursos">Recursos</a></li>
+						<li><a class="nav-link" id="alumnos-nav-link" href="#seccion_alumnos">Alumnos</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a id="code-nav-link" href="https://github.com/CursosWeb">Código fuente de todo esto</a></li>
+					</ul>
 				</div>
-				<!--Bootsnipp http://bootsnipp.com/snippets/featured/carousel-static-headline-caption  -->
-				<div id="carousel-title" class="text-center">
-					<h1>
-                        Cursos sobre tecnologías web
-					</h1>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<h1 id="header-title">
+			Cursos sobre tecnologías web
+		</h1>
+		<div class="container">
+			<div class="row hidden-xs">
+				<div class="col-sm-offset-1 col-sm-2 col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2">
+					<img src="images/html5.png" alt="" class="img-responsive">
 				</div>
-				<div id="carousel-footer">
-					<p>Documentación (programas, ejercicios, código útil para las prácticas) para algunos cursos sobre tecnologías web impartidos en la <a href="http://www.etsit.urjc.es">Escuela de Ingeniería de
-						Telecomunicación</a> de la <a href="http://www.urjc.es">Universidad Rey Juan Carlos</a>
-					</p>
+				<div class="col-sm-offset-2 col-sm-2 col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2">
+					<img src="images/javascript.png" alt="" class="img-responsive">
+				</div>
+				<div class="hidden-sm col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2">
+					<img src="images/ajax.png" alt="" class="img-responsive">
+				</div>
+				<div class="col-sm-offset-2 col-sm-2 col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2">
+					<img src="images/django.png" alt="" class="img-responsive">
 				</div>
 			</div>
+			<div class="row hidden-xs">
+				<div class="col-sm-offset-1 col-sm-2 col-md-offset-2 col-md-2 col-lg-offset-2 col-lg-2">
+					<img src="images/jquery.png" alt="" class="img-responsive">
+				</div>
+				<div class="col-sm-offset-2 col-sm-2 col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2">
+					<img src="images/bootstrap.png" alt="" class="img-responsive">
+				</div>
+				<div class="col-sm-offset-2 col-sm-2 col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2">
+					<img src="images/python.png" alt="" class="img-responsive">
+				</div>
+			</div>
+			<div class="row visible-xs-block">
+				<div class="col-xs-offset-2 col-xs-3">
+					<img src="images/html5.png" alt="" class="img-responsive">
+				</div>
+				<div class="col-xs-offset-2 col-xs-3">
+					<img src="images/javascript.png" alt="" class="img-responsive">
+				</div>
+			</div>
+			<div class="row visible-xs-block">
+				<div class="col-xs-offset-2 col-xs-3">
+					<img src="images/django.png" alt="" class="img-responsive">
+				</div>
+				<div class="col-xs-offset-2 col-xs-3">
+					<img src="images/jquery.png" alt="" class="img-responsive">
+				</div>
+			</div>
+			<div class="row visible-xs-block">
+				<div class="col-xs-offset-2 col-xs-3">
+					<img src="images/bootstrap.png" alt="" class="img-responsive">
+				</div>
+				<div class="col-xs-offset-2 col-xs-3">
+					<img src="images/python.png" alt="" class="img-responsive">
+				</div>
+			</div>
+
+		</div>
+		<div class="container" id="header-footer">
+			<p>Documentación (programas, ejercicios, código útil para las prácticas) para algunos cursos sobre tecnologías web impartidos en la <a href="http://www.etsit.urjc.es">Escuela de Ingeniería de
+				Telecomunicación</a> de la <a href="http://www.urjc.es">Universidad Rey Juan Carlos</a>
+			</p>
 		</div>
 	</header>
 
@@ -226,46 +251,46 @@
 		<p>Código usado para resolver los ejercicios o prácticas. Todo el código está en el repositorio
 			<a href="https://github.com/CursosWeb/Code">CursosWeb/Code</a>
 		</p>
-		<p>Prácticas incrementales, entre los <a href="https://github.com/CursosWeb">repositorios de CursosWeb en GitHub</a> (ver detalles en el programa de cada asignatura):
-			<ul>
-				<li>ITT-DAT e IT-AT: Los repositorios que comienzan por X-Nav.</li>
-				<li>IST-SARO e ITT-SAT: Los repositorios que comienzan por X-Serv.</li>
-			</ul>
+		<p>Prácticas incrementales, entre los <a href="https://github.com/CursosWeb">repositorios de CursosWeb en GitHub</a> (ver detalles en el programa de cada asignatura):</p>
+		<ul>
+			<li>ITT-DAT e IT-AT: Los repositorios que comienzan por X-Nav.</li>
+			<li>IST-SARO e ITT-SAT: Los repositorios que comienzan por X-Serv.</li>
+		</ul>
 
-			<p class="bg-info">Recuerda que para entregar tus prácticas tendrás que &ldquo;hacer un fork&rdquo; de los repositorios correspondientes, y registrar tu nombre de cuenta en Git Hub en la actividad abierta para ello en el sitio de tu asignatura en el campus virtual.
-			</p>
-			<p class="bg-danger"><strong>Atención:</strong> iremos poniendo más código relacionado con las prácticas durante los próximos días.</p>
-			<div class="container">
-				<div class="row">
-					<div class="panel panel-primary col-md-5 col-lg-5">
-						<div class="panel-heading">Código utilizado en IST-SARO e ITT-SAT</div>
-						<div class="panel-body">
-							<ul class="list-group">
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/HTML">Introducción a HTML</a></li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/CSS">Introducción a CSS</a></li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/JavaScript">Introducción a JavaScript</a></li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/jQuery">Introducción a jQuery</a> (<a href="http://cursosweb.github.io/Code/jQuery">demos online</a>)</li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/HTML5">Introducción a HTML5</a></li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/JS-Libs">Algunas bibliotecas JavaScript</a> (<a href="http://cursosweb.github.io/Code/JS-Libs/jquery-ui">demos online relacionadas con jQuery-UI</a>)</li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/JS-APIs">APIs de servicio usadas desde JavaScript</a> (<a href="http://cursosweb.github.io/Code/JS-APIs/leaflet">demos online relacionadas con mapas</a>, <a href="http://cursosweb.github.io/Code/JS-APIs/github">demos online relacionadas con GitHub</a>)</li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/OAuth">OAuth</a> (<a href="http://cursosweb.github.io/Code/OAuth">demos online</a>)</li>
-							</ul>
-						</div>
+		<p class="bg-info">Recuerda que para entregar tus prácticas tendrás que &ldquo;hacer un fork&rdquo; de los repositorios correspondientes, y registrar tu nombre de cuenta en Git Hub en la actividad abierta para ello en el sitio de tu asignatura en el campus virtual.
+		</p>
+		<p class="bg-danger"><strong>Atención:</strong> iremos poniendo más código relacionado con las prácticas durante los próximos días.</p>
+		<div class="container">
+			<div class="row">
+				<div class="panel panel-primary col-md-5 col-lg-5">
+					<div class="panel-heading">Código utilizado en IST-SARO e ITT-SAT</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/HTML">Introducción a HTML</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/CSS">Introducción a CSS</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/JavaScript">Introducción a JavaScript</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/jQuery">Introducción a jQuery</a> (<a href="http://cursosweb.github.io/Code/jQuery">demos online</a>)</li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/HTML5">Introducción a HTML5</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/JS-Libs">Algunas bibliotecas JavaScript</a> (<a href="http://cursosweb.github.io/Code/JS-Libs/jquery-ui">demos online relacionadas con jQuery-UI</a>)</li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/JS-APIs">APIs de servicio usadas desde JavaScript</a> (<a href="http://cursosweb.github.io/Code/JS-APIs/leaflet">demos online relacionadas con mapas</a>, <a href="http://cursosweb.github.io/Code/JS-APIs/github">demos online relacionadas con GitHub</a>)</li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/OAuth">OAuth</a> (<a href="http://cursosweb.github.io/Code/OAuth">demos online</a>)</li>
+						</ul>
 					</div>
-					<div class="panel panel-primary col-md-offset-2 col-lg-offset-2  col-md-5 col-lg-5">
-						<div class="panel-heading">Código utilizado en IST-SARO e ITT-SAT</div>
-						<div class="panel-body">
-							<ul class="list-group">
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/Python-Web">Servidores web simples en Python</a></li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/REST">Servidores web que interoperan (simples, en Python)</a></li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/XML">XML y Python</a></li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/CSS">CSS</a></li>
-								<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/Ajax">Ajax</a> (<a href="http://cursosweb.github.io/Code/Ajax/spa-sentences-generator/">demos online</a>)</li>
-							</ul>
-						</div>
+				</div>
+				<div class="panel panel-primary col-md-offset-2 col-lg-offset-2  col-md-5 col-lg-5">
+					<div class="panel-heading">Código utilizado en IST-SARO e ITT-SAT</div>
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/Python-Web">Servidores web simples en Python</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/REST">Servidores web que interoperan (simples, en Python)</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/XML">XML y Python</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/CSS">CSS</a></li>
+							<li class="list-group-item"><a href="https://github.com/CursosWeb/Code/tree/master/Ajax">Ajax</a> (<a href="http://cursosweb.github.io/Code/Ajax/spa-sentences-generator/">demos online</a>)</li>
+						</ul>
 					</div>
 				</div>
 			</div>
+		</div>
 	</section>
 	<section class="container" id="seccion_recursos">
 		<h2>Recursos</h2>
@@ -295,9 +320,9 @@
 				<ul class="list-group">
 					<li class="list-group-item"><strong>Transparencias:</strong> <a href="https://slides.com/concise/js">Concise JavaScript</a>. Breve introducción al lenguaje para quien ya sabe programar.</li>
 					<li class="list-group-item"><strong>Guía: </strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">A re-introduction to JavaScript</a>. Guía práctica para quien cree que ya sabe algo de JavaScript. Muy recomendable.</li>
-					<li class="list-group-item"><strong>Guía: </strong><a href="https://bonsaiden.github.io/JavaScript-Garden/">JavaScript Garden.</a> Documentación sobre los detalles más peculiares de JavaScript, los que suelen dar más problemas.
-						<li class="list-group-item"><strong>Libro: </strong><a href="http://eloquentjavascript.net/">Eloquent JavaScript</a>. Puede ayudarte mucho si ya sabes programar y estás empezando a trabajar con JavaScript.</li>
-						<li class="list-group-item"><strong>Materiales varios: </strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript</a>. Muchos materiales para aprender JavaScript, producidos y compilados por el proyecto Mozilla.</li>
+					<li class="list-group-item"><strong>Guía: </strong><a href="https://bonsaiden.github.io/JavaScript-Garden/">JavaScript Garden.</a> Documentación sobre los detalles más peculiares de JavaScript, los que suelen dar más problemas.</li>
+					<li class="list-group-item"><strong>Libro: </strong><a href="http://eloquentjavascript.net/">Eloquent JavaScript</a>. Puede ayudarte mucho si ya sabes programar y estás empezando a trabajar con JavaScript.</li>
+					<li class="list-group-item"><strong>Materiales varios: </strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript</a>. Muchos materiales para aprender JavaScript, producidos y compilados por el proyecto Mozilla.</li>
 				</ul>
 			</div>
 		</div>

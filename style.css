@@ -2,33 +2,42 @@ body {
     position: relative;
 }
 
-.navbar {
-    margin-bottom: 0;
-}
-
 #header {
     padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("images/web.png");
+}
+
+#header img {
+    margin: auto;
+}
+
+#header .row {
+    margin-top: 7vh;
+}
+
+#header-title {
     padding-top: 50px;
-}
-
-#header-carousel {
-    max-height: 500px;
-}
-
-#carousel-title {
-    position: absolute;
-    top: 0px;
-    width: 97%;
     color: #FFF;
+    text-align: center;
 }
 
-#carousel-footer {
-    position: absolute;
-    bottom: 0px;
-    width: 97%;
+#header-footer {
+    margin-top: 3vh;
     padding: 20px;
     color: #FFF;
     font-size: 120%;
+}
+
+#header .visible-xs-block img {
+    max-height: 13vh;
+}
+
+#seccion_asignaturas, #seccion_codigo, #seccion_recursos, #seccion_alumnos {
+    padding-top: 40px;
 }
 
 .panel, .panel-group {
@@ -52,4 +61,8 @@ footer {
 
 .list-group {
     margin: 0;
+}
+
+h2 {
+    text-align: center;
 }
