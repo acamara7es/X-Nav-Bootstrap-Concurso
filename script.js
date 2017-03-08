@@ -31,28 +31,39 @@ ist_saro_transpas_button.addEventListener("click", link_transpas);
 var ist_saro_friki_button = document.getElementById('ist_saro_friki_button');
 ist_saro_friki_button.addEventListener("click", link_friki);
 
+//Profes
+var jgb_div = document.getElementById("jgb");
+jgb_div.addEventListener("click", function() {
+    window.open("https://gsyc.urjc.es/~jgb/", '_blank');
+});
+var grex_div = document.getElementById("grex");
+grex_div.addEventListener("click", function() {
+    window.open("https://gsyc.urjc.es/~grex/", '_blank');
+});
+
+
 function link_program(e) {
-	curse = get_course(e.target.id);
-	window.open("https://cursosweb.github.io/programas/" + curse + ".pdf", '_blank');
+    curse = get_course(e.target.id);
+    window.open("https://cursosweb.github.io/programas/" + curse + ".pdf", '_blank');
 }
 
 function get_course(string) {
-	var parts = string.split("_");
-	return parts[0].toUpperCase() + "-" + parts[1].toUpperCase();
+    var parts = string.split("_");
+    return parts[0].toUpperCase() + "-" + parts[1].toUpperCase();
 }
 
 function link_transpas(e) {
-	curse = get_course(e.target.id);
-	window.open("https://cursosweb.github.io/transpas/" + curse + ".pdf", '_blank');
+    curse = get_course(e.target.id);
+    window.open("https://cursosweb.github.io/transpas/" + curse + ".pdf", '_blank');
 }
 
 function link_friki(e) {
-	curse = get_course(e.target.id);
-	if (curse === "IT-AT") {
-		window.open("https://cursosweb.github.io/transpas/frikiminutos-c.pdf", '_blank');
-	} else if (curse === "ITT_DAT") {
-		window.open("https://cursosweb.github.io/transpas/frikiminutos-b.pdf", '_blank');
-	} else {
-		window.open("https://cursosweb.github.io/transpas/frikiminutos-a.pdf", '_blank');
-	}
+    curse = get_course(e.target.id);
+    if (curse === "IT-AT") {
+        window.open("https://cursosweb.github.io/transpas/frikiminutos-c.pdf", '_blank');
+    } else if (curse === "ITT_DAT") {
+        window.open("https://cursosweb.github.io/transpas/frikiminutos-b.pdf", '_blank');
+    } else {
+        window.open("https://cursosweb.github.io/transpas/frikiminutos-a.pdf", '_blank');
+    }
 }

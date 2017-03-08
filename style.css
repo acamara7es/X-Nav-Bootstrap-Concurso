@@ -36,7 +36,7 @@ body {
     max-height: 13vh;
 }
 
-#seccion_asignaturas, #seccion_codigo, #seccion_recursos, #seccion_alumnos {
+section {
     padding-top: 40px;
 }
 
@@ -61,6 +61,11 @@ footer {
 
 .list-group {
     margin: 0;
+}
+
+#seccion_profes p {
+    margin-top: 10px;
+    text-align: center;
 }
 
 h2 {
